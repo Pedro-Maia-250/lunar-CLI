@@ -110,12 +110,6 @@ Decimal para uma base personalizada:
 lunar --convert --dec 255 --base 16
 ```
 
-Usando o `.jar` diretamente:
-
-```bash
-java -jar target/lunar-2.5.2-SNAPSHOT.jar --convert 42 --bin
-```
-
 ## Desenvolvimento
 
 Rodar os testes:
@@ -129,4 +123,7 @@ Gerar o pacote:
 ```bash
 mvn package
 ```
+## COMO INSTALAR
 
+baixe o instalador lunar-2.5.3.exe na pasta /instalador
+adicione o caminho do executavel ao PATH do sistema (caminho provavel: C:\Program Files\lunar)
