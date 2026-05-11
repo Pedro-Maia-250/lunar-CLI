@@ -1,16 +1,15 @@
 # Lunar
 
-Lunar e um CLI simples de utilitarios feito em Java. No momento, o foco do
-projeto e converter numeros entre bases numericas, como decimal, binario, octal,
+Lunar é uma CLI simples de utilitários feita em Java. No momento, o foco do
+projeto é converter números entre bases numéricas, como decimal, binária, octal,
 hexadecimal e bases personalizadas.
 
 ## Como instalar
 
-```texto
-1- Baixe o instalador lunar-2.5.3.exe na pasta /instalador.
-2- Execute e siga as instruçoes para instalar o programa.
-3- Adicione o caminho do executavel ao PATH do sistema (caminho provavel: C:\Program Files\lunar).
-```
+- Baixe o instalador `lunar-x.x.x.exe` disponível nos releases deste repositório.
+- Execute-o e siga as instruções para instalar o programa.
+- Adicione o caminho do executável ao `PATH` do sistema (caminho provável: `C:\Program Files\lunar`).
+
 ## Requisitos para compilar
 
 - Java 21 ou superior
@@ -24,7 +23,7 @@ Na raiz do projeto, execute:
 mvn package
 ```
 
-O arquivo `.jar` sera gerado em:
+O arquivo `.jar` será gerado em:
 
 ```bash
 target/lunar-x.x.x.jar
@@ -32,25 +31,25 @@ target/lunar-x.x.x.jar
 
 ## Como usar
 
-Execute o CLI com:
+Execute a CLI com:
 
 ```bash
-java -jar target/lunar-x.x.x.jar <comando> [opcoes]
+java -jar target/lunar-x.x.x.jar <comando> [opções]
 ```
 
-Se voce configurar um alias ou script chamado `lunar`, os exemplos tambem podem
+Se você configurar um alias ou script chamado `lunar`, os exemplos também podem
 ser usados neste formato:
 
 ```bash
-lunar <comando> [opcoes]
+lunar <comando> [opções]
 ```
 
 ## Comandos
 
 ```text
---convert    Converte numeros entre bases.
+--convert    Converte números entre bases.
 --help       Mostra a mensagem de ajuda.
---version    Mostra a versao atual do Lunar.
+--version    Mostra a versão atual do Lunar.
 ```
 
 ## Bases suportadas
@@ -60,10 +59,10 @@ lunar <comando> [opcoes]
 --oct        Base 8.
 --dec        Base 10.
 --hex        Base 16.
---base <n>   Base numerica personalizada.
+--base <n>   Base numérica personalizada.
 ```
 
-## Sintaxe de conversao
+## Sintaxe de conversão
 
 Converter um valor decimal para outra base:
 
@@ -87,13 +86,13 @@ O destino pode ser `--bin`, `--oct`, `--dec`, `--hex` ou `--base <n>`.
 
 ## Exemplos
 
-Decimal para binario:
+Decimal para binário:
 
 ```bash
 lunar --convert 42 --bin
 ```
 
-Binario para decimal:
+Binário para decimal:
 
 ```bash
 lunar --convert --bin 101010 --dec
