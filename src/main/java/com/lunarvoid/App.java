@@ -38,6 +38,8 @@ public class App
             return;
         }catch(IllegalArgumentException e){
             System.out.println("Entrada invalida: " + e.getMessage());
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Entrada invalida: " + e.getMessage());
         }
         
     }

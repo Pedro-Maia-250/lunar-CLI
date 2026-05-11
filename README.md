@@ -4,7 +4,14 @@ Lunar e um CLI simples de utilitarios feito em Java. No momento, o foco do
 projeto e converter numeros entre bases numericas, como decimal, binario, octal,
 hexadecimal e bases personalizadas.
 
-## Requisitos
+## Como instalar
+
+```texto
+1- Baixe o instalador lunar-2.5.3.exe na pasta /instalador.
+2- Execute e siga as instruçoes para instalar o programa.
+3- Adicione o caminho do executavel ao PATH do sistema (caminho provavel: C:\Program Files\lunar).
+```
+## Requisitos para compilar
 
 - Java 21 ou superior
 - Maven 3.x
@@ -123,7 +130,3 @@ Gerar o pacote:
 ```bash
 mvn package
 ```
-## COMO INSTALAR
-
-baixe o instalador lunar-2.5.3.exe na pasta /instalador
-adicione o caminho do executavel ao PATH do sistema (caminho provavel: C:\Program Files\lunar)

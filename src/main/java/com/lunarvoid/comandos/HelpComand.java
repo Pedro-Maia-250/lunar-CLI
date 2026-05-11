@@ -12,6 +12,7 @@ public class HelpComand implements Comando {
         .append("  lunar --convert <valor-decimal> <destino>\n")
         .append("  lunar --convert <origem> <valor> <destino>\n")
         .append("  lunar --convert --base <base-origem> <valor> <destino>\n")
+        .append("  lunar --convert --base <base-origem> <valor> --base <base-destino>\n")
         .append("  lunar --help\n")
         .append("  lunar --version\n")
         .append("\n")
@@ -35,8 +36,10 @@ public class HelpComand implements Comando {
         .append("  lunar --convert --dec 255 --base 16\n")
         .append("\n")
         .append("Observacoes:\n")
-        .append("  - Valores acima de 9 usam letras maiusculas: A, B, C...\n")
-        .append("  - Para executar o JAR diretamente, use: java -jar target/lunar-2.5.2-SNAPSHOT.jar");
+        .append("  - Valores a baixo de zero não serão convertidos\n")
+        .append("  - Valores com casas decimais não são suportados\n")
+        .append("  - Valores superiores a int32 não são suportados\n")
+        .append("  - Valores acima de 9 usam letras maiusculas: A, B, C...\n");
         System.out.println(str.toString());
     }
 }
